@@ -1,0 +1,1151 @@
+<html>
+<head>
+<title>Test Code Searcher Report</title>
+<meta http-equiv="content-type" charset="utf-8">
+<style>
+body {
+    background-color: #456;
+}
+h1 {
+    margin-top: 25px;
+    color: white;
+}
+h2 {
+    color: white;
+}
+td {
+    border: solid 1px; 
+    padding: 10px; 
+    border-left: 0px;
+    border-bottom: 0px;
+}
+th {
+    background-color: #eee;
+    border: solid 1px;
+    padding: 10px;
+    font-weight: normal;
+    border-left: 0px; 
+    border-bottom: 0px; 
+}
+mark.red {
+    background-color: #FFC4C1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+mark.yellow {
+    background-color: rgb(254, 234, 123);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+mark.green {
+    background-color: #B5EFDB;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+mark.grey {
+    background-color: #EAEEF0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+mark.darkred {
+    background-color: #FF8983;
+}
+mark.darkgreen_line {
+    background-color: #6BDFB8;
+}
+mark.darkred_line {
+    background-color: #FF8983;
+}
+mark.darkgreen {
+    background-color: #6BDFB8;
+}
+.whitecolor {
+	background-color: white;
+}
+#table-flame {
+    background-color: rgba(72,72,72,0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 3px;
+    padding-bottom: 50px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+}
+table, td, th {
+border: 2px #cccccc solid;
+}
+table {
+  border: 1px solid #aaa;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+table thead th,
+table th,
+table td {
+  padding: .6em 3em;
+  border-bottom: 1px solid #aaa;
+}
+table thead th {
+  background-color: #ddd;
+}
+table th {
+  background-color: #eee;
+}
+table thead th + th,
+table td {
+  border-left: 1px solid #aaa;
+}
+table tr:last-child th,
+table tr:last-child td {
+  border-bottom: none;
+}
+td.leftcode {
+   border-top: 0px;
+   border-bottom: none;
+   padding: 0px;
+   padding-left: 5%;
+   height: 5px;
+}
+td.rightcode {
+   border-top: 0px;
+   border-bottom: 0px;
+   padding: 0px;
+   padding-left: 5%;
+   height: 5px;
+}
+pre {
+   overflow: auto;
+   white-space: pre-wrap;
+   word-wrap: break-word;
+   margin: 0%;
+}
+</style>
+<head>
+<body>
+<h1 align="center">Test Code Searcher Report</h1>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 1 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">! public String ConversionNum(String select,int dec) {</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!    public String baseConversion(String select,int decNum) {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     if (select == "bin") {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       if (select == "bin") {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         String num = <mark class="darkred">Integer.toBinaryString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          String num = <mark class="darkgreen">Integer.toBinaryString(decNum);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return num;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return num;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!     }else if(select == "hex") {</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!       }else if (select == "hexadecimal") {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         String num = <mark class="darkred">Integer.toHexString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          String num = <mark class="darkgreen">Integer.toHexString(decNum);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return num;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return num;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         return "can not conversion";</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          return "Invalid input";</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td class="whitecolor" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td class="whitecolor" width="10%" height="5px" align="center">Default Test</td><td class="whitecolor" width="10%" height="5px" align="center">Eager Test</td><td class="whitecolor" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 6 - 12 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion08Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //26を入力し16進数の1aに変換する
+	  public void testBaseConversion_26to1a(){
+	      BaseConversion08 bc = new BaseConversion08();
+	      String actual = bc.baseConversion("hexadecimal", 26);
+	      assertEquals("1a", actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 13 - 19 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion08Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //無効な入力処理
+	  public void testInvalidValue(){
+	      BaseConversion08 bc = new BaseConversion08();
+	      String actual = bc.baseConversion("XXX", 26);
+	      assertEquals("Invalid input", actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 20 - 26 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion08Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //26を入力し2進数の11010に変換する
+	  public void testBaseConversion_26to32(){
+	      BaseConversion08 bc = new BaseConversion08();
+	      String actual = bc.baseConversion("bin", 26);
+	      assertEquals("11010", actual);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 2 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">! public String ConversionNum(String select,int dec) {</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!    public String Conversion(String select,int decimal) {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     if (select == <mark class="darkred">"bin")</mark> {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       if (select == <mark class="darkgreen">"binary")</mark> {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         String num = Integer.toBinaryString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          String number = Integer.toBinaryString(decimal);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else if(select == <mark class="darkred">"hex")</mark> {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else if(select == <mark class="darkgreen">"hexadecimal")</mark> {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         String num = Integer.toHexString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          String number = Integer.toHexString(decimal);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return "can not conversion";</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return "can not conversion";</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td class="whitecolor" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td class="whitecolor" width="10%" height="5px" align="center">Default Test</td><td class="whitecolor" width="10%" height="5px" align="center">Eager Test</td><td class="whitecolor" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 6 - 12 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion10Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testConversionNumber_2500toHex()  {
+	      BaseConversion10 sut = new BaseConversion10();
+	      String result = sut.Conversion("hexadecimal", 2500);
+	      assertEquals("9c4", result);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 13 - 19 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion10Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testConversionNumber_2500toBin()  {
+	      BaseConversion10 sut = new BaseConversion10();
+	      String result = sut.Conversion("binary", 2500);
+	      assertEquals("100111000100", result);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 20 - 26 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion10Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testCanNotConversion()  {
+	      BaseConversion10 sut = new BaseConversion10();
+	      String result = sut.Conversion("aaa", 2500);
+	      assertEquals("can not conversion", result);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 3 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! public String <mark class="darkred">ConversionNum(String</mark> select,int dec) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    public String <mark class="darkgreen">baseConversion(String</mark> select,int dec) {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     if (select == "bin") {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       if (select == "bin") {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         String num = Integer.toBinaryString(dec);</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          String num = Integer.toBinaryString(dec);</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return num;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return num;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else if(select == "hex") {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else if(select == "hex") {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         String num = Integer.toHexString(dec);</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          String num = Integer.toHexString(dec);</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return num;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return num;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return "can not conversion";</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return "can not conversion";</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td class="whitecolor" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td class="whitecolor" width="10%" height="5px" align="center">Default Test</td><td class="whitecolor" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 6 - 12 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion05Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //Convert input value to hexadecimal number
+	  public void testReturn_hexadecimalNumber()  throws Throwable  {
+	      BaseConversion05 sut = new BaseConversion05();
+	      String actual = sut.baseConversion("hex", 254);
+	      assertEquals("fe", actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 13 - 19 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion05Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //Convert input value to binary number
+	  public void testReturn_BinaryNumber()  throws Throwable  {
+	      BaseConversion05 sut = new BaseConversion05();
+	      String actual = sut.baseConversion("bin", 254);
+	      assertEquals("11111110", actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 20 - 26 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion05Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //Testing with invalid values entered
+	  public void testInputInvalidValue()  throws Throwable  {
+	      BaseConversion05 sut = new BaseConversion05();
+	      String actual = sut.baseConversion("xxx", 254);
+	      assertEquals("can not conversion", actual);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 4 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! public String <mark class="darkred">ConversionNum(String</mark> select,int dec) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    public String <mark class="darkgreen">baseConversion(String</mark> select,int dec) {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     if (select == "bin") {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       if (select == "bin") {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         String <mark class="darkred">num</mark> = Integer.toBinaryString(dec);</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          String <mark class="darkgreen">number</mark> = Integer.toBinaryString(dec);</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else if(select == "hex") {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else if(select == "hex") {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         String <mark class="darkred">num</mark> = Integer.toHexString(dec);</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          String <mark class="darkgreen">number</mark> = Integer.toHexString(dec);</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         return "can not conversion";</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          return "Invalid input";</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td class="whitecolor" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td class="whitecolor" width="10%" height="5px" align="center">Default Test</td><td class="whitecolor" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 6 - 12 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion01Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //10進数を入力し16進数を返す
+	  public void testReturnHexNumber()  throws Throwable  {
+		  BaseConversion01 sut = new BaseConversion01();
+	      String actual = sut.baseConversion("hex", 254);
+	      assertEquals("fe", actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 13 - 19 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion01Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //10進数を入力し2進数を返す
+	  public void testReturnBinNumber()  throws Throwable  {
+	      BaseConversion01 sut = new BaseConversion01();
+	      String actual = sut.baseConversion("bin", 254);
+	      assertEquals("11111110", actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 20 - 26 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion01Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //無効な値を入力しInvalid inputを返す
+	  public void testReturnInvalidInput()  throws Throwable  {
+	      BaseConversion01 sut = new BaseConversion01();
+	      String actual = sut.baseConversion("oct", 254);
+	      assertEquals("Invalid input", actual);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 5 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! public String <mark class="darkred">ConversionNum(String</mark> select,int dec) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    public String <mark class="darkgreen">baseConversion(String</mark> select,int dec) {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     if (select == <mark class="darkred">"bin")</mark> {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       if (select == <mark class="darkgreen">"hexadecimal")</mark> {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         String num = Integer.toBinaryString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          String number = Integer.toOctalString(dec);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else if(select == <mark class="darkred">"hex")</mark> {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else if(select == <mark class="darkgreen">"bin")</mark> {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         String num = Integer.toHexString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          String number = Integer.toBinaryString(dec);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return "can not conversion";</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return "can not conversion";</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td class="whitecolor" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td class="whitecolor" width="10%" height="5px" align="center">Default Test</td><td class="whitecolor" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 6 - 13 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion06Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //dec to hex 10進数から16進数
+	  public void test0()  throws Throwable  {
+	      BaseConversion06 bc = new BaseConversion06();
+	      String actual = bc.baseConversion("hexadecimal", 254);
+	      String expected = "fe";
+	      assertEquals(expected, actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 14 - 21 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion06Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //dec to bin 10進数から2進数
+	  public void test1()  throws Throwable  {
+	      BaseConversion06 bc = new BaseConversion06();
+	      String actual = bc.baseConversion("bin", 10);
+	      String expected = "1010";
+	      assertEquals(expected, actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 22 - 29 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion06Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //Invalid input 無効な入力
+	  public void test2()  throws Throwable  {
+	      BaseConversion06 bc = new BaseConversion06();
+	      String actual = bc.baseConversion("aaaaa", 10);
+	      String expected = "can not conversion";
+	      assertEquals(expected, actual);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 6 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! public String <mark class="darkred">ConversionNum(String</mark> select,int dec) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    public String <mark class="darkgreen">baseConversion(String</mark> select,int dec) {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     if (select == <mark class="darkred">"bin")</mark> {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       if (select == <mark class="darkgreen">"oct")</mark> {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         String num = Integer.toBinaryString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          String number = Integer.toOctalString(dec);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else if(select == "hex") {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else if(select == "hex") {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         String <mark class="darkred">num</mark> = Integer.toHexString(dec);</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          String <mark class="darkgreen">number</mark> = Integer.toHexString(dec);</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         return "can not conversion";</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          return "Can not Conversion";</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td bgcolor="#FF9966" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Default Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 6 - 18 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion03Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test1()  throws Throwable  {
+	      BaseConversion03 suiteRec_rank0 = new BaseConversion03();
+	      String string0 = suiteRec_rank0.baseConversion("bin", 254);
+	      assertEquals("can not conversion", string0);
+	      String string1 = suiteRec_rank0.baseConversion("xxx", 2100);
+	      assertEquals("can not conversion", string1);
+	      String string2 = suiteRec_rank0.baseConversion("aaa", 253);
+	      assertEquals("can not conversion", string2);
+	      String string3 = suiteRec_rank0.baseConversion("qqq", 904);
+	      assertEquals("can not conversion", string3);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 19 - 31 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion03Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test2()  throws Throwable  {
+	      BaseConversion03 suiteRec_rank0 = new BaseConversion03();
+	      String string0 = suiteRec_rank0.baseConversion("oct", 254);
+	      assertEquals("376", string0);
+	      String string1 = suiteRec_rank0.baseConversion("oct", 100);
+	      assertEquals("144", string1);
+	      String string2 = suiteRec_rank0.baseConversion("oct", 50);
+	      assertEquals("62", string2);
+	      String string3 = suiteRec_rank0.baseConversion("oct", 20);
+	      assertEquals("24", string3);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 7 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! public String <mark class="darkred">ConversionNum(String</mark> select,int dec) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    public String <mark class="darkgreen">baseConversion(String</mark> select,int dec) {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     if (select == "bin") {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       if (select == "bin") {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         String <mark class="darkred">num</mark> = Integer.toBinaryString(dec);</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          String <mark class="darkgreen">number</mark> = Integer.toBinaryString(dec);</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else if(select == <mark class="darkred">"hex")</mark> {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else if(select == <mark class="darkgreen">"oct")</mark> {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         String num = Integer.toHexString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          String number = Integer.toOctalString(dec);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         return "can not conversion";</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          return "Invalid input";</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td bgcolor="#FF9966" width="10%" height="5spx" align="center">Assertion Roulette</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Conditional Test Logic</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Default Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Eager Test</td><td class="whitecolor" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 6 - 24 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion04Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test0()  throws Throwable  {
+	      BaseConversion04 suiteRec_rank0 = new BaseConversion04();
+	      String [] input = {"hex","bin","oct"};
+	      for (int i = 0; i < input.length; i++) {
+		      if (input[i] == "oct") {
+			      String string0 = suiteRec_rank0.baseConversion("oct", 254);
+			      assertEquals("376", string0);
+		      }else if (input[i] == "bin") {
+			      String string0 = suiteRec_rank0.baseConversion("bin",254);
+			      assertEquals("11111110", string0);
+		      }else {
+			      String string0 = suiteRec_rank0.baseConversion(input[i],254);
+			      assertEquals("Invalid input", string0);
+		      }
+	      }
+
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 8 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! public String <mark class="darkred">ConversionNum(String</mark> select,int dec) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    public String <mark class="darkgreen">baseConversion(String</mark> select,int dec) {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     if (select == <mark class="darkred">"bin")</mark> {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       if (select == <mark class="darkgreen">"binary")</mark> {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         String <mark class="darkred">num</mark> = Integer.toBinaryString(dec);</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          String <mark class="darkgreen">number</mark> = Integer.toBinaryString(dec);</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else if(select == <mark class="darkred">"hex")</mark> {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else if(select == <mark class="darkgreen">"octal")</mark> {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         String num = Integer.toHexString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          String number = Integer.toOctalString(dec);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         return "can not conversion";</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          return "Invalid input";</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td bgcolor="#FF9966" width="10%" height="5spx" align="center">Assertion Roulette</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Conditional Test Logic</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Default Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Eager Test</td><td class="whitecolor" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 6 - 20 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion07Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test0() {
+	      BaseConversion07 suiteRec_rank0 = new BaseConversion07();
+	      String [] input = {"hex","bin","oct","binary"};
+	      for (int i = 0; i < input.length; i++) {
+	    	  if (input[i] == "binary") {
+			      String string0 = suiteRec_rank0.baseConversion(input[i],10);
+			      assertEquals("1010", string0);
+		      }else {
+			      String string0 = suiteRec_rank0.baseConversion(input[i],10);
+			      assertEquals("Invalid input", string0);
+		      }
+	      }
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 21 - 35 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion07Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test1() {
+	      BaseConversion07 suiteRec_rank0 = new BaseConversion07();
+	      String [] input = {"hex","bin","oct","octal"};
+	      for (int i = 0; i < input.length; i++) {
+		      if (input[i] == "octal") {
+			      String string0 = suiteRec_rank0.baseConversion(input[i], 254);
+			      assertEquals("376", string0);
+		      }else {
+			      String string0 = suiteRec_rank0.baseConversion(input[i],254);
+			      assertEquals("Invalid input", string0);
+		      }
+	      }
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 9 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! public String <mark class="darkred">ConversionNum(String</mark> select,int dec) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    public String <mark class="darkgreen">baseConversion(String</mark> select,int dec) {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!     if (select == "bin") {</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!       if(select == "oct") {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         String num = Integer.toBinaryString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          String number = Integer.toOctalString(dec);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!     }else if(select == "hex") {</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!       }else if (select == "bin") {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         String num = Integer.toHexString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          String number = Integer.toBinaryString(dec);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         return "can not conversion";</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          return "Invalid input";</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td bgcolor="#FF9966" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Default Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 6 - 25 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion02Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test0()  throws Throwable  {
+	      BaseConversion02 suiteRec_rank0 = new BaseConversion02();
+	      String string0 = suiteRec_rank0.baseConversion("hex", 254);
+	      String expected0 = "Invalid input";
+	      String string3 = suiteRec_rank0.baseConversion("xxx", 254);
+	      String expected3 = "Invalid input";
+	      String string4 = suiteRec_rank0.baseConversion("aaa", 254);
+	      String expected4 = "Invalid input";
+	      String string1 = suiteRec_rank0.baseConversion("bin", 254);
+	      String expected1 = "11111110";
+	      String string2 = suiteRec_rank0.baseConversion("oct", 254);
+	      String expected2 = "376";
+	      assertEquals(expected0, string0);
+	      assertEquals(expected1, string1);
+	      assertEquals(expected2, string2);
+	      assertEquals(expected3, string3);
+	      assertEquals(expected4, string4);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 10 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! public String <mark class="darkred">ConversionNum(String</mark> select,int dec) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    public String <mark class="darkgreen">baseConversion(String</mark> select,int dec) {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     if (select == <mark class="darkred">"bin")</mark> {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       if (select == <mark class="darkgreen">"hexadecimal")</mark> {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         String num = Integer.toBinaryString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          String number = Integer.toHexString(dec);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else if(select == <mark class="darkred">"hex")</mark> {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else if(select == <mark class="darkgreen">"octal")</mark> {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!         String num = Integer.toHexString(dec);</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!          String number = Integer.toOctalString(dec);</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">num;</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">number;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }else {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }else {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!         return <mark class="darkred">"can</mark> not conversion";</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          return <mark class="darkgreen">"Invalid";</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!     }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>! }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td bgcolor="#FF9966" width="10%" height="5spx" align="center">Assertion Roulette</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Conditional Test Logic</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Default Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 12 - 33 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion09Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test(timeout = 4000)
+	  public void test0(String COMMA__DELIMITER)  throws Throwable  {
+	      BaseConversion09 suiteRec_rank0 = new BaseConversion09();
+		  List<List<String>> InputData = new ArrayList<>();
+		  try (BufferedReader br = new BufferedReader(new FileReader("input.csv"))) {
+		      String line;
+		      while ((line = br.readLine()) != null) {
+		          String[]values = line.split(COMMA__DELIMITER);
+		          InputData.add(Arrays.asList(values));
+		      }
+		  }
+	      for (int i = 0; i < InputData.length; i++) {
+	    	  if (InputData[i] == "binary") {
+			      String string0 = suiteRec_rank0.baseConversion(InputData[i],10);
+			      assertEquals("1010", string0);
+		      }else {
+			      String string0 = suiteRec_rank0.baseConversion(InputData[i],10);
+			      assertEquals("Invalid input", string0);
+		      }
+	      }
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 34 - 42 of suiteRec-ranking2/src/test/java/jp/tcs/expt/junit/BaseConversion09Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test1()  throws Throwable  {
+	      BaseConversion09 suiteRec_rank0 = new BaseConversion09();
+	      String string0 = suiteRec_rank0.baseConversion("bin", 254);
+	      assertEquals("Invalid", string0);
+	      String string1 = suiteRec_rank0.baseConversion("octal", 254);
+	      assertEquals("376", string1);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>

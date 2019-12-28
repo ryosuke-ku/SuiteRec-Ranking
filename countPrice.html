@@ -1,0 +1,1279 @@
+<html>
+<head>
+<title>Test Code Searcher Report</title>
+<meta http-equiv="content-type" charset="utf-8">
+<style>
+body {
+    background-color: #456;
+}
+h1 {
+    margin-top: 25px;
+    color: white;
+}
+h2 {
+    color: white;
+}
+td {
+    border: solid 1px; 
+    padding: 10px; 
+    border-left: 0px;
+    border-bottom: 0px;
+}
+th {
+    background-color: #eee;
+    border: solid 1px;
+    padding: 10px;
+    font-weight: normal;
+    border-left: 0px; 
+    border-bottom: 0px; 
+}
+mark.red {
+    background-color: #FFC4C1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+mark.yellow {
+    background-color: rgb(254, 234, 123);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+mark.green {
+    background-color: #B5EFDB;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+mark.grey {
+    background-color: #EAEEF0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+mark.darkred {
+    background-color: #FF8983;
+}
+mark.darkgreen_line {
+    background-color: #6BDFB8;
+}
+mark.darkred_line {
+    background-color: #FF8983;
+}
+mark.darkgreen {
+    background-color: #6BDFB8;
+}
+.whitecolor {
+	background-color: white;
+}
+#table-flame {
+    background-color: rgba(72,72,72,0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 3px;
+    padding-bottom: 50px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+}
+table, td, th {
+border: 2px #cccccc solid;
+}
+table {
+  border: 1px solid #aaa;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+table thead th,
+table th,
+table td {
+  padding: .6em 3em;
+  border-bottom: 1px solid #aaa;
+}
+table thead th {
+  background-color: #ddd;
+}
+table th {
+  background-color: #eee;
+}
+table thead th + th,
+table td {
+  border-left: 1px solid #aaa;
+}
+table tr:last-child th,
+table tr:last-child td {
+  border-bottom: none;
+}
+td.leftcode {
+   border-top: 0px;
+   border-bottom: none;
+   padding: 0px;
+   padding-left: 5%;
+   height: 5px;
+}
+td.rightcode {
+   border-top: 0px;
+   border-bottom: 0px;
+   padding: 0px;
+   padding-left: 5%;
+   height: 5px;
+}
+pre {
+   overflow: auto;
+   white-space: pre-wrap;
+   word-wrap: break-word;
+   margin: 0%;
+}
+</style>
+<head>
+<body>
+<h1 align="center">Test Code Searcher Report</h1>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 1 : 45.5%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!    public int <mark class="darkred">countPrice(int</mark> item[]){</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    public int <mark class="darkgreen">countItemPrice(int</mark> item[]){</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       int totalprice <mark class="darkred">=</mark> 0;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       int totalprice <mark class="darkgreen">=0;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       if (item.length == 0){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!       int num = item.length;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!       if (num == 0){</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre>           return -1;</pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre>           return -1;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre>        }</pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre>        }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       for( int i=0; i &lt; item.length; i++ ) {</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!       for( int k=0; k &lt; num; k++ ) {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!          totalprice += <mark class="darkred">item[i];</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          totalprice += <mark class="darkgreen">item[k];</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre>        }</pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre>        }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre>        return totalprice;</pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre>        return totalprice;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre>     }</pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre>     }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td class="whitecolor" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td class="whitecolor" width="10%" height="5px" align="center">Default Test</td><td class="whitecolor" width="10%" height="5px" align="center">Eager Test</td><td class="whitecolor" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 8 - 18 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock09Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testCalcTotalItemPrice() {
+	      ItemStock09 sut = new ItemStock09();
+	      int[] itemArray = new int[2]; // 要素数3の配列を用意
+	      itemArray[0] = 600;
+	      itemArray[1] = 400;
+	      itemArray[2] = 500;
+	      int actual = sut.countItemPrice(itemArray);
+	      assertEquals(1500, actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 19 - 29 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock09Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testAllInputItemIs0() {
+	      ItemStock09 sut = new ItemStock09();
+	      int[] itemArray = new int[3]; // すべての要素が0の配列を用意
+	      itemArray[0] = 0;
+	      itemArray[1] = 0;
+	      itemArray[2] = 0;
+	      int actual = sut.countItemPrice(itemArray);
+	      assertEquals(0, actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 30 - 37 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock09Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testIutputEmpty() {
+	      int[] itemArray = new int[0]; //空の配列を用意
+	      ItemStock09 sut = new ItemStock09();
+	      int actual = sut.countItemPrice(itemArray);
+	      assertEquals((-1), actual);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 2 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!    public int countPrice(int item[]){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!    public int addition1(int ...cost) {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       int totalprice = 0;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int totalcost= 0;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       if (item.length == 0){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int num = cost.length;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          return -1;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         if (num == 0){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">return</mark> -1;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">for(</mark> int i=0; i &lt; item.length; i++ ) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          totalprice += item[i];</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         for( int i=0; i&lt;num; i++ ){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">totalcost</mark> += cost[i];</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">return</mark> totalprice;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!    <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">return</mark> totalcost;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!     }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td class="whitecolor" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td class="whitecolor" width="10%" height="5px" align="center">Default Test</td><td class="whitecolor" width="10%" height="5px" align="center">Eager Test</td><td class="whitecolor" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 8 - 16 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock01Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testCalcTotalInputArray() {
+	      ItemStock01 itemStock = new ItemStock01();
+	      int[] inputArray = new int[1];
+	      inputArray[0] = 496;
+	      int totalcost = itemStock.addition1(inputArray);
+	      assertEquals(496, totalcost);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 17 - 24 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock01Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testInputEmptyArray() {
+	      int[] emptyArray = new int[0];
+	      ItemStock01 itemStock = new ItemStock01();
+	      int totalcost = itemStock.addition1(emptyArray);
+	      assertEquals((-1), totalcost);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 25 - 31 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock01Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testCalcCost0Array() {
+	      ItemStock01 itemStock = new ItemStock01();
+	      int totalcost = itemStock.addition1(0,0,0,0);
+	      assertEquals(0, totalcost);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 3 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!    public int countPrice(int item[]){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!     public int addition3(int ...item) {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       int totalprice = 0;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int totalcost= 0;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       if (item.length == 0){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int num = item.length;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          return -1;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         if (num == 0){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">return</mark> -1;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">for(</mark> int i=0; i &lt; item.length; i++ ) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          totalprice += item[i];</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         for( int i=0; i&lt;num; i++ ){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">totalcost</mark> += item[i];</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">return</mark> totalprice;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!    <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">return</mark> totalcost;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!     }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td class="whitecolor" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Default Test</td><td class="whitecolor" width="10%" height="5px" align="center">Eager Test</td><td class="whitecolor" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 8 - 14 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock03Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //Count Total Cost
+	  public void test01(){
+	      ItemStock03 itemStock = new ItemStock03();
+	      int totalcost = itemStock.addition3(120,140,180);
+	      assertEquals(440, totalcost);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 15 - 22 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock03Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test // Input Empty Array
+	  public void test02(){
+	      ItemStock03 itemStock = new ItemStock03();
+	      int[] empty = new int[0];
+	      int actual = itemStock.addition3(empty);
+	      assertEquals(-1, actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 23 - 29 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock03Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test // Input All Cost 0
+	  public void test03(){
+	      ItemStock03 itemStock = new ItemStock03();
+	      int totalcost = itemStock.addition3(0,0,0,0);
+	      assertEquals(0, totalcost);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 4 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!    public int countPrice(int item[]){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!     public int countItem(int ...item) {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       int totalprice = 0;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int totalcost= 0;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       if (item.length == 0){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int item_num = item.length;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          return -1;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         if (item_num == 0){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">return</mark> -1;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">for(</mark> int i=0; i &lt; item.length; i++ ) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          totalprice += item[i];</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         for( int i=0; i&lt;item_num; i++ ){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">totalcost</mark> += item[i];</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">return</mark> totalprice;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!    <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">return</mark> totalcost;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!     }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td class="whitecolor" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td class="whitecolor" width="10%" height="5px" align="center">Default Test</td><td class="whitecolor" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 8 - 17 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock07Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testCountTotalItems() throws Throwable  {
+	      int[] Items = new int[2];
+	      Items[0] = 120;
+	      Items[1] = 240;
+	      ItemStock07 itemStock = new ItemStock07();
+	      int actual = itemStock.countItem(Items);
+	      assertEquals(360, actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 18 - 28 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock07Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void return0_AllItemCostIs0()  throws Throwable  {
+	      ItemStock07 itemStock = new ItemStock07();
+	      int[] Items = new int[3];
+	      Items[0] = 0;
+	      Items[1] = 0;
+	      Items[2] = 0;
+	      int actual = itemStock.countItem(Items);
+	      assertEquals(0, actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 29 - 36 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock07Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testInputEmptyArray()  throws Throwable  {
+	      int[] Items = new int[0];
+	      ItemStock07 itemStock = new ItemStock07();
+	      int actual = itemStock.countItem(Items);
+	      assertEquals((-1), actual);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 5 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!    public int countPrice(int item[]){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!     public int countItem(int ...item) {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       int totalprice = 0;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int totalcost= 0;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       if (item.length == 0){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int num = item.length;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          return -1;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         if (num == 0){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">return</mark> -1;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">for(</mark> int i=0; i &lt; item.length; i++ ) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          totalprice += item[i];</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         for( int i=0; i&lt;num; i++ ){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">totalcost</mark> += item[i];</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">return</mark> totalprice;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!    <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">return</mark> totalcost;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!     }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td class="whitecolor" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td class="whitecolor" width="10%" height="5px" align="center">Default Test</td><td class="whitecolor" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 8 - 15 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock05Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testCountAddItem0()  throws Throwable  {
+	      ItemStock05 itemStock = new ItemStock05();
+	      int totalItem = itemStock.countItem(25,25,50);
+	      int expected = 100;
+	      assertEquals(expected, totalItem);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 16 - 24 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock05Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test //empty array
+	  public void testItemIsNothing()  throws Throwable  {
+	      int[] intArray = new int[0]; 
+	      ItemStock05 itemStock = new ItemStock05();
+	      int actual = itemStock.countItem(intArray);
+	      int expected = -1;
+	      assertEquals(expected, actual);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 25 - 34 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock05Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void testCountAllItem0()  throws Throwable  {
+	      ItemStock05 itemStock = new ItemStock05();
+	      int actual = itemStock.countItem(0,0,0,0);
+	      int expected = 0;
+	      assertEquals(expected, actual);
+	  }
+
+}
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 6 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!    public int countPrice(int item[]){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!     public int addition(int ...item) {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       int totalprice = 0;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int totalcost= 0;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       if (item.length == 0){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int num = item.length;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          return -1;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         if (num == 0){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          <mark class="darkgreen">System.out.print("Input</mark> Is Empty");</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       for( int i=0; i &lt; item.length; i++ ) {</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!             return -1;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!          <mark class="darkred">totalprice</mark> += item[i];</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">for(</mark> int i=0; i&lt;num; i++ ){</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       return totalprice;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!             totalcost += item[i];</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!    }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         return totalcost;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!     }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td class="whitecolor" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Default Test</td><td class="whitecolor" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 13 - 26 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock10Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test0(String COMMA__DELIMITER)  throws Throwable  {
+		  List<List<String>> InputData = new ArrayList<>();
+		  try (BufferedReader br = new BufferedReader(new FileReader("book.csv"))) {
+		      String line;
+		      while ((line = br.readLine()) != null) {
+		          String[]values = line.split(COMMA__DELIMITER);
+		          InputData.add(Arrays.asList(values));
+		      }
+		  }
+	      int int0 = itemStock10_0.addition(InputData);
+	      assertEquals(0, int0);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 27 - 35 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock10Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test1()  throws Throwable  {
+	      ItemStock10 itemStock10_0 = new ItemStock10();
+	      int[] intArray0 = new int[1];
+	      intArray0[0] = 680;
+	      int int0 = itemStock10_0.addition(intArray0);
+	      assertEquals(680, int0);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 36 - 51 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock10Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test2()  throws Throwable  {
+	      ItemStock10 itemStock10_0 = new ItemStock10();
+	      // Undeclared exception!
+	      try {
+	        itemStock10_0.addition((int[]) null);
+	        fail("Expecting exception: NullPointerException");
+
+	      } catch(NullPointerException e) {
+	         //
+	         // no message in exception (getMessage() returned null)
+	         //
+	    	  fail();
+	      }
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 52 - 59 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock10Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test3()  throws Throwable  {
+	      int[] intArray0 = new int[0];
+	      ItemStock10 itemStock10_0 = new ItemStock10();
+	      int int0 = itemStock10_0.addition(intArray0);
+	      assertEquals((-1), int0);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 7 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!    public int countPrice(int item[]){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!    public int addition02(int ...amounts) {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       int totalprice = 0;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int totalcost= 0;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       if (item.length == 0){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int num = amounts.length;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          return -1;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         if (num == 0){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">return</mark> -1;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">for(</mark> int i=0; i &lt; item.length; i++ ) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          totalprice += item[i];</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         for( int i=0; i&lt;num; i++ ){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">totalcost</mark> += amounts[i];</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">return</mark> totalprice;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!    <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">return</mark> totalcost;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!     }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td bgcolor="#FF9966" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Default Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 8 - 20 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock02Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test01()  throws Throwable  {
+	      ItemStock02 itemStock02_0 = new ItemStock02();
+	      int[] intArray0 = new int[4];
+	      intArray0[0] = 1970;
+	      int int0 = itemStock02_0.addition02(intArray0);
+	      assertEquals(1970, int0);
+	      int[] intArray1 = new int[8];
+	      intArray1[0] = 1870;
+	      int int1 = itemStock02_0.addition02(intArray1);
+	      assertEquals(1870, int1);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 21 - 30 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock02Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test02()  throws Throwable  {
+	      int[] intArray0 = new int[0];
+	      ItemStock02 itemStock02_0 = new ItemStock02();
+	      int int0 = itemStock02_0.addition02(intArray0);
+	      assertEquals((-1), int0);
+	      int int1 = itemStock02_0.addition02(intArray0);
+	      assertEquals((-1), int1);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 31 - 40 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock02Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test03()  throws Throwable  {
+	      ItemStock02 itemStock02_0 = new ItemStock02();
+	      int[] intArray0 = new int[02];
+	      int int0 = itemStock02_0.addition02(intArray0);
+	      assertEquals(0, int0);
+	      int int1 = itemStock02_0.addition02(intArray0);
+	      assertEquals(0, int1);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 8 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!    public int countPrice(int item[]){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!     public int countTotalItem(int ...item) {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       int totalprice = 0;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int totalItem= 0;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       if (item.length == 0){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int num = item.length;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          return -1;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         if (num == 0){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!          <mark class="darkgreen">System.out.print("Input</mark> Is Empty");</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       for( int i=0; i &lt; item.length; i++ ) {</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!             return -1;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!          <mark class="darkred">totalprice</mark> += item[i];</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">for(</mark> int i=0; i&lt;num; i++ ){</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       return totalprice;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!             totalItem += item[i];</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!    }</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         }</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         return totalItem;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!     }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td bgcolor="#FF9966" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Default Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 8 - 19 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock08Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test1()  throws Throwable  {
+	      ItemStock08 itemStock8_0 = new ItemStock08();
+	      // Undeclared exception!
+	      try {
+	        itemStock8_0.countTotalItem((int[]) null);
+	        fail("Expecting exception: NullPointerException");
+	      } catch(NullPointerException e) {
+	    	fail();
+	      }
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 20 - 34 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock08Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test2()  throws Throwable  {
+	      ItemStock08 itemStock8_0 = new ItemStock08();
+	      int[] intArray0 = new int[0];
+	      int int0 = itemStock8_0.countTotalItem(intArray0);
+	      int[] intArray1 = new int[10];
+	      int int1 = itemStock8_0.countTotalItem(intArray1);
+	      int[] intArray2 = new int[3];
+	      intArray2[1] = 2998;
+	      int int2 = itemStock8_0.countTotalItem(intArray2);
+	      assertEquals((-1), int0);
+	      assertEquals(0, int1);
+	      assertEquals(2998, int2);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 9 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!    public int countPrice(int <mark class="darkred">item[]){</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!    public int countPrice(int <mark class="darkgreen">...price)</mark> {</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       int totalprice = 0;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int totalprice= 0;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       if (item.length == 0){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int num = price.length;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          return -1;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         if (num == 0){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">return</mark> -1;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">for(</mark> int i=0; i &lt; item.length; i++ ) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          totalprice += item[i];</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         for( int i=0; i&lt;num; i++ ){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">totalprice</mark> += price[i];</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">return</mark> totalprice;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!    <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">return</mark> totalprice;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!     }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td bgcolor="#FF9966" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Default Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td class="whitecolor" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 9 - 33 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock06Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test0()  throws Throwable  {
+	      ItemStock06 ItemStock06_0 = new ItemStock06();
+	      int[] intArray0 = new int[11];
+	      int[] intArray1 = new int[1];
+	      int[] intArray2 = new int[0];
+	      int int1 = ItemStock06_0.countPrice(intArray1);
+	      int int0 = ItemStock06_0.countPrice(intArray0);
+	      int int2 = ItemStock06_0.countPrice(intArray2);
+	      intArray1[0] = 1;
+	      assertEquals(0, int0);
+	      assertEquals(1, int1);
+	      assertEquals((-1), int2);
+	      try {
+		        ItemStock06_0.countPrice((int[]) null);
+		        fail("Expecting exception: NullPointerException");
+
+		      } catch(NullPointerException e) {
+		         //
+		         // no message in exception (getMessage() returned null)
+		         //
+		         verifyException("tutorial.ItemStock06", e);
+		      }
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
+<div id="table-flame">
+<h2 align="center">Clone Pairs 10 : 0.0%</h2>
+<table border="1" width=50% height="50" align="center">
+<tr>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Input Code</th>
+<th class="title" colspan="3" width="500px" height="50%" align="center">Similarity Code</th>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!    public int countPrice(int item[]){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!     public int add(int ...item) {</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       int totalprice = 0;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int totalcost= 0;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!       if (item.length == 0){</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         int num = item.length;</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          return -1;</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         if (num == 0){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">return</mark> -1;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">for(</mark> int i=0; i &lt; item.length; i++ ) {</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkred_line">!          totalprice += item[i];</mark></pre></td>
+<td class="rightcode" bgcolor="#fbfbfb" colspan="3"><pre><mark class="darkgreen_line">!         for( int i=0; i&lt;num; i++ ){</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!             <mark class="darkgreen">totalcost</mark> += item[i];</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!       <mark class="darkred">return</mark> totalprice;</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">}</mark></pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#FFC4C1" colspan="3"><pre>!    <mark class="darkred">}</mark></pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!         <mark class="darkgreen">return</mark> totalcost;</pre></td>
+</tr>
+<tr>
+<td class="leftcode" bgcolor="#EAEEF0" colspan="3"><pre>*</pre></td>
+<td class="rightcode" bgcolor="#B5EFDB" colspan="3"><pre>!     }</pre></td>
+</tr>
+<tr><td colspan="6"></td></tr><tr><th colspan="6">Test Suite</th></tr><tr>
+<td bgcolor="#FF9966" width="10%" height="5spx" align="center">Assertion Roulette</td><td class="whitecolor" width="10%" height="5px" align="center">Conditional Test Logic</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Default Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Eager Test</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Exception Handling</td><td bgcolor="#FF9966" width="10%" height="5px" align="center">Mystery Guest</td><tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 10 - 23 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock04Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test01()  throws Throwable  {
+	      ItemStock04 itemStock4_0 = new ItemStock04();
+	      int[] intArray0 = new int[2];
+	      intArray0[0] = 0;
+	      intArray0[1] = 0;
+	      int int0 = itemStock4_0.add(intArray0);
+	      assertEquals(0, int0);
+	      int[] intArray1 = new int[1];
+	      intArray1[0] = 853;
+	      int int1 = itemStock4_0.add(intArray1);
+	      assertEquals(853, int1);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 24 - 36 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock04Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test02()  throws Throwable  {
+	      ItemStock04 itemStock4_0 = new ItemStock04();
+	      List<List<String>> inputArray= new ArrayList<>();
+	      try (Scanner scanner = new Scanner(new File("test.csv"));) { //外部のcsvファイルを使用
+	          while (scanner.hasNextLine()) {
+	        	  inputArray.add(getRecordFromLine(scanner.nextLine()));
+	          }
+	      }
+	      int int0 = itemStock4_0.add(inputArray);
+	      assertEquals(1940, int0);
+	  }
+</pre>
+</td>
+</tr>
+<tr>
+<th colspan="6" width="500px" height="50%" align="left">
+Lines 37 - 49 of suiteRec-ranking/src/test/java/jp/tcs/expt/junit/ItemStock04Test.java
+</th>
+</tr>
+<tr>
+<td class="whitecolor" colspan="10" width="500px" height="50%">
+<pre>
+	  @Test
+	  public void test03()  throws Throwable  {
+	      ItemStock04 itemStock4_0 = new ItemStock04();
+	      int int1 = itemStock4_0.add(120,300,180);
+	      int int2 = itemStock4_0.add(120,300,180,400);
+	      int int3 = itemStock4_0.add(120,300,180,500,400);
+	      int int4 = itemStock4_0.add(120,300,180,400,1000);
+	      assertEquals(600, int1);
+	      assertEquals(1000, int2);
+	      assertEquals(1500, int3);
+	      assertEquals(2000, int4);
+	  }
+</pre>
+</td>
+</tr>
+</table>
+</div>
+<p></p></body>
+</html>
